@@ -1,0 +1,13 @@
+@ToDoAPI_HostAddress = http://localhost:5128
+
+GET {{ToDoAPI_HostAddress}}/api/Items
+
+###
+POST {{ToDoAPI_HostAddress}}/api/Items
+Content-Type: application/json
+
+{
+    "Title": "Finish the ToDo API project",
+    "IsComplete": false,
+    "Priority": 3
+}
